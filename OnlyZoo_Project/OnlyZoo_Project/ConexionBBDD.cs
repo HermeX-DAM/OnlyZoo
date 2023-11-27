@@ -8,5 +8,8 @@ namespace OnlyZoo_Project
 {
     internal class ConexionBBDD
     {
+
+    }
+    
    
 }
