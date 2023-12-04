@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace OnlyZoo_Project.Controlador
 {
-    internal class Controlador
+    public class Controlador
     {
 
 
