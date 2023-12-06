@@ -38,7 +38,8 @@
             // 
             imgMascota.Location = new Point(13, 13);
             imgMascota.Name = "imgMascota";
-            imgMascota.Size = new Size(114, 116);
+            imgMascota.Size = new Size(115, 115);
+            imgMascota.SizeMode = PictureBoxSizeMode.Zoom;
             imgMascota.TabIndex = 0;
             imgMascota.TabStop = false;
             // 
@@ -61,6 +62,7 @@
             lblTipo.Size = new Size(47, 25);
             lblTipo.TabIndex = 2;
             lblTipo.Text = "Tipo";
+            lblTipo.Click += lblTipo_Click;
             // 
             // UCElementoMascota
             // 

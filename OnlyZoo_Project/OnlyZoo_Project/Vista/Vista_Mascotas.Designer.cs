@@ -31,6 +31,7 @@
             menuStrip1 = new MenuStrip();
             catalogoToolStripMenuItem = new ToolStripMenuItem();
             mascotasToolStripMenuItem = new ToolStripMenuItem();
+            flpCatalogoMascotas = new FlowLayoutPanel();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -38,7 +39,7 @@
             // 
             menuStrip1.Items.AddRange(new ToolStripItem[] { catalogoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "Menu";
+            menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "Menu";
@@ -46,21 +47,30 @@
             // catalogoToolStripMenuItem
             // 
             catalogoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mascotasToolStripMenuItem });
-            catalogoToolStripMenuItem.Name = "catalogo";
+            catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
             catalogoToolStripMenuItem.Size = new Size(67, 20);
             catalogoToolStripMenuItem.Text = "Catalogo";
             // 
             // mascotasToolStripMenuItem
             // 
-            mascotasToolStripMenuItem.Name = "Mascotas";
+            mascotasToolStripMenuItem.Name = "mascotasToolStripMenuItem";
             mascotasToolStripMenuItem.Size = new Size(124, 22);
             mascotasToolStripMenuItem.Text = "Mascotas";
+            // 
+            // flpCatalogoMascotas
+            // 
+            flpCatalogoMascotas.Dock = DockStyle.Fill;
+            flpCatalogoMascotas.Location = new Point(0, 24);
+            flpCatalogoMascotas.Name = "flpCatalogoMascotas";
+            flpCatalogoMascotas.Size = new Size(800, 426);
+            flpCatalogoMascotas.TabIndex = 1;
             // 
             // Vista_Mascotas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(flpCatalogoMascotas);
             Controls.Add(menuStrip1);
             Name = "Vista_Mascotas";
             StartPosition = FormStartPosition.WindowsDefaultBounds;
@@ -76,5 +86,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem catalogoToolStripMenuItem;
         private ToolStripMenuItem mascotasToolStripMenuItem;
+        public FlowLayoutPanel flpCatalogoMascotas;
     }
 }

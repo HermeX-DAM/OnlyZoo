@@ -4,48 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlyZoo_Project
+namespace OnlyZoo_Project.Modelo
 {
-    internal class Mascota
+    public class Mascota
     {
+        public int Id {  get; set; }
+        public string Tipo { get; set; }
+        public string Raza { get; set;}
+        public string Descripcion { get; set; }
+        public string Alimentacion { get; set; }
+        public int Disponibilidad { get; set; }
         public Mascota()
         {
 
         }
-        public Mascota(int id, string nombre, string raza, int edad, string dueño, bool vacunada, string color)
+        public Mascota(int id, string tipo, string raza, string descripcion, string alimentacion, int disponibilidad)
         {
-            Id = id;
-            Nombre = nombre;
-            Raza = raza;
-            Edad = edad;
-            Dueño = dueño;
-            Vacunada = vacunada;
-            Color = color;
+            this.Id = id;
+            this.Tipo = tipo;
+            this.Raza = raza;
+            this.Descripcion = descripcion;
+            this.Alimentacion = alimentacion;
+            this.Disponibilidad = disponibilidad;
         }
-
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Raza { get; set; }
-        public int Edad { get; set; }
-        public string Dueño { get; set; }
-        public bool Vacunada { get; set; }
-        public string Color { get; set; }
-
         public override bool Equals(object? obj)
         {
-            return obj is Mascota mascota &&
-                   Id == mascota.Id &&
-                   Nombre == mascota.Nombre &&
-                   Raza == mascota.Raza &&
-                   Edad == mascota.Edad &&
-                   Dueño == mascota.Dueño &&
-                   Vacunada == mascota.Vacunada &&
-                   Color == mascota.Color;
+            return base.Equals(obj);
         }
-
         public override int GetHashCode()
         {
-            return HashCode.Combine(Id, Nombre, Raza, Edad, Dueño, Vacunada, Color);
+            return base.GetHashCode();
+        }
+        public override string? ToString()
+        {
+            return base.ToString();
         }
     }
 }

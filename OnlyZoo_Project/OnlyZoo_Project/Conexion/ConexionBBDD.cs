@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OnlyZoo_Project.Conexion
 {
-    internal class ConexionBBDD
+    public class ConexionBBDD
     {
         public readonly string cadenaConexion;
         public MySqlConnection conexion;

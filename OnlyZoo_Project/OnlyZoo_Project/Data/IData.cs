@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnlyZoo_Project.Dao
+namespace OnlyZoo_Project.Data
 {
-    internal class MascotaDao
+    public interface IData<T>
     {
+        public List<T> GetAll();
     }
 }
